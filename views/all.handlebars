@@ -1,0 +1,16 @@
+{{!-- Home View --}}
+<div class="container">
+  <div class="blogBackground">
+    <h4>Here are some recent posts:</h4>
+    {{#each allPosts as |Posts|}}
+      <h3>{{Posts.title}}</h3>
+      <p>{{Posts.body}}</p> 
+      <h5>Posted by: {{ Posts.user.user_name }} </h5>
+    {{/each}}
+      {{!-- {{#each allComments as |Comments|}}
+      <h6>{{Comments.comment_body}} commended by: {{Comments.user.user_id}}</h6>
+      {{/each}} --}}
+    {{!-- Make a new Post --}}
+
+</div>
+

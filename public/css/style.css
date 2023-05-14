@@ -1,0 +1,52 @@
+:root {
+  /* Color Creep color scheme inspired by pintrest https://www.pinterest.com/pin/571253533998179438/ */
+  --deep-grey: #171a21;
+  --wilted-blue: #193038;
+  --vague-blue: #819ba3;
+  --deep-blue: #09101a;
+  --vague-grey: #9d9cad;
+  --wilted-blueberry: #38374a;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+header, .project:not(:last-child) {
+  border-bottom: 1px solid var(--wilted-blueberry);
+  background-color: var(--deep-blue);
+  color: white;
+}
+
+.btn {
+  margin: 10px;
+}
+
+body {
+  background-color: var(--vague-blue);
+}
+
+nav {
+  background-color: var(--deep-blue);
+  width: 100%;
+  color: white;
+}
+
+.blogBackground {
+  background-color: var(--deep-blue);
+  width: 100%;
+  color: white;
+  margin: 20px 20px 15px 15px;
+  padding: 30px;
+}
+
+.logout.btn {
+  display: inline-flex;
+}
+
+h4 {
+  background-color: var(--wilted-blue);
+  color: white;
+  font-weight: 200;
+  margin: none;
+  padding: 15px;
+}

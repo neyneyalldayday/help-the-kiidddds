@@ -1,0 +1,36 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog App</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  {{!-- jass.css loads first --}}
+  <link rel="stylesheet" href="/css/style.css">
+  {{!-- custom style.css loads second and allows any overrides of jass.css styles --}}
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <nav>
+        <h1>
+          Tech Blog
+        </h1>
+        {{!-- {{#if session.user}} --}}
+        {{!-- {{else}} --}}
+        <div class="form-group">
+          <a href='/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
+          <a href='/logout' class="logout btn" id="logout">Logout</a>
+
+        </div>
+        {{!-- {{/if}} --}}
+      </nav>
+    </header>
+    <main class="container container-fluid mt-5">
+      {{{ body }}}
+
+    </main>
+  </div>
+</body>
+
+</html>
